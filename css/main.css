@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+p,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contribution-graph {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  width: 1000px;
+}
+.contribution-graph .contribution-graph__table {
+  width: 970px;
+  display: block;
+  -moz-columns: 51;
+       columns: 51;
+}
+.contribution-graph .contribution-graph__upper-table-text,
+.contribution-graph .contribution-left-table-text {
+  font-size: 12px;
+  color: #959494;
+}
+.contribution-graph .contribution-graph__upper-table-text {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.contribution-graph .contribution-graph__upper-table-text p {
+  margin: 5px;
+}
+.contribution-graph .contribution__row-text-table {
+  display: flex;
+}
+.contribution-graph .contribution-left-table-text {
+  margin-top: -8px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.contribution-graph .contribution-left-table-text p {
+  margin: 8px 6px 10px 0;
+}
+
+.item {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 1px;
+}
+.item:hover {
+  transition: 0.2s transform;
+  transform: scale(1.1);
+  border: rgba(0, 0, 0, 0.5) 1px solid;
+}
+
+.noContributions {
+  background: #ededed;
+}
+
+.firstLevel {
+  background: #acd5f2;
+}
+
+.secondLevel {
+  background: #7fa8c9;
+}
+
+.thirdLevel {
+  background: #527ba0;
+}
+
+.lastLevel {
+  background: #254e77;
+}
+
+.color-gradation {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.color-gradation > .item {
+  margin: 0 2.5px;
+  color: #959494;
+}
+.color-gradation > .item:hover {
+  border: none;
+  transform: none;
+}
+.color-gradation p {
+  margin: 0px 10px;
+  font-size: 8px;
+}
+
+.tooltip {
+  padding: 5px 10px;
+  background: black;
+  position: absolute;
+  border-radius: 3px;
+  text-align: center;
+  z-index: 10;
+}
+.tooltip ::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip h6 {
+  font-size: 12px;
+  margin: 0 0 5px;
+  color: white;
+}
+.tooltip p {
+  margin: 0;
+  font-size: 10px;
+  color: #7c7c7c;
+}
+
+@media (max-width: 999px) {
+  .contribution-graph {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .contribution-graph .contribution-graph__table {
+    max-width: 970px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .contribution-graph .contribution-graph__upper-table-text {
+    width: 100%;
+    margin-left: 30px;
+    word-break: break-word;
+  }
+  .contribution-graph .contribution-graph__upper-table-text p {
+    margin: 1px;
+  }
+  .contribution-graph .contribution__row-text-table {
+    display: flex;
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contribution Graph</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" async src="js/main.js"></script>
+    </head>
+  <body>
+    <section class="contribution-graph">
+      <div class="contribution-graph__upper-table-text"></div>
+      <div class="contribution__row-text-table">
+        <div class="contribution-left-table-text">
+          <p>Пн</p>
+          <p>Ср</p>
+          <p>Пт</p>
+        </div>
+        <div class="contribution-graph__table"></div>
+      </div>
+
+      <div class="color-gradation">
+        <p>Меньше</p>
+        <div
+          data-info="0 contribution"
+          class="color-gradation__item item noContributions"
+        ></div>
+        <div
+          data-info="1-9 contribution"
+          class="color-gradation__item item firstLevel"
+        ></div>
+        <div
+          data-info="10-19 contribution"
+          class="color-gradation__item item secondLevel"
+        ></div>
+        <div
+          data-info="20-29 contribution"
+          class="color-gradation__item item thirdLevel"
+        ></div>
+        <div
+          data-info="30+ contribution"
+          class="color-gradation__item item lastLevel"
+        ></div>
+        <p>Больше</p>
+      </div>
+    </section>
+  </body>
+</html>
